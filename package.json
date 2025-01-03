@@ -1,5 +1,5 @@
 {
-	"name": "bundle",
+	"name": "@zenfs/bundle",
 	"version": "1.0.0-date-2025.1.2",
 	"author": "James Prevett <jp@jamespre.dev> (https://jamespre.dev)",
 	"license": "MIT",
