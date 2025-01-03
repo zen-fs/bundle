@@ -90,7 +90,7 @@ for (const { format, platform, entryPoint, minify } of bundles) {
 	const prefix = join(options.output, name);
 
 	await build({
-		globalName: 'ZenFS',
+		globalName: packageName == 'all' ? 'ZenFS' : 'ZenFS_' + packageName,
 		bundle: true,
 		outfile: prefix + '.js',
 		entryPoints: [join(entryDir, entryPoint)],
