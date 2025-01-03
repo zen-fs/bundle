@@ -9,6 +9,7 @@
 	"bin": "build.js",
 	"files": [
 		"build.js",
+		"entry",
 		"dist"
 	],
 	"exports": {
@@ -18,7 +19,8 @@
 	"scripts": {
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
-		"build": "./build.js"
+		"build": "./build.js",
+		"prepublishOnly": "./build.js -v"
 	},
 	"dependencies": {
 		"@zenfs/archives": "^1.0.1",
