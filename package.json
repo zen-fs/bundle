@@ -1,0 +1,34 @@
+{
+	"name": "bundle",
+	"version": "0.0.0",
+	"author": "James Prevett <jp@jamespre.dev> (https://jamespre.dev)",
+	"license": "MIT",
+	"type": "module",
+	"description": "Bundles for ZenFS",
+	"keywords": [],
+	"bin": "build.js",
+	"files": [
+		"build.js",
+		"dist"
+	],
+	"exports": {
+		".": "./dist/index.js",
+		"./*": "./dist/*"
+	},
+	"scripts": {
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"build": "./build.js"
+	},
+	"dependencies": {
+		"@zenfs/archives": "^1.0.1",
+		"@zenfs/cloud": "^0.1.0",
+		"@zenfs/core": "^1.6.16",
+		"@zenfs/dom": "^1.1.1",
+		"@zenfs/emscripten": "^1.0.0"
+	},
+	"devDependencies": {
+		"esbuild": "^0.24.2",
+		"prettier": "^3.4.2"
+	}
+}
