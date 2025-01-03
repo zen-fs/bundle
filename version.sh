@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
-# yyyy.mm.dd
-npm version $(date +%Y).$(date +%m).$(date +%d)
+# x.x.x-date-yyyy.mm.dd
+npm version 1.0.0-date-$(date +%Y.%m.%d)
 
