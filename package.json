@@ -6,7 +6,9 @@
 	"type": "module",
 	"description": "Bundles for ZenFS",
 	"keywords": [],
-	"bin": "build.js",
+	"bin": {
+		"zenfs-bundle": "build.js"
+	},
 	"files": [
 		"build.js",
 		"entry",
