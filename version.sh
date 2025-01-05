@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+npm install @zenfs/archives@latest @zenfs/cloud@latest @zenfs/core@latest @zenfs/dom@latest @zenfs/emscripten@latest
+
 # x.x.x-date-yyyy.mm.dd
 npm version 1.0.0-date-$(date +%Y.%m.%d)
 
