@@ -24,6 +24,10 @@
 		"build": "./build.js",
 		"prepublishOnly": "./build.js -v"
 	},
+	"publishConfig": {
+		"access": "public",
+		"tag": "latest"
+	},
 	"dependencies": {
 		"@zenfs/archives": "^1.0.1",
 		"@zenfs/cloud": "^0.1.0",
