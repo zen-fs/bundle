@@ -1,6 +1,25 @@
 #!/usr/bin/bash
 
-npm install @zenfs/archives@latest @zenfs/cloud@latest @zenfs/core@latest @zenfs/dom@latest @zenfs/emscripten@latest
+# Update dependencies
+
+UPDATE=$(npm outdated --json | jq -r 'to_entries[] | .key + " " + .value.current + " -> " + .value.latest')
+
+if [[ -z $UPDATED ]]; then
+	echo "No updates available."
+else
+
+	echo -e "Updating dependencies:\n $UPDATE"
+
+	read -p "Proceed with update? (y/N) " -n 1 -r
+
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
+		npm install @zenfs/archives@latest @zenfs/cloud@latest @zenfs/core@latest @zenfs/dom@latest @zenfs/emscripten@latest
+		git commit -am "$(echo -e "Updated dependencies:\n $UPDATE")"
+	else
+		echo "Publish aborted."
+	fi
+fi
 
 # x.x.x-date-yyyy.mm.dd
 npm version 1.0.0-date-$(date +%Y.%m.%d)
