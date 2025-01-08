@@ -4,7 +4,7 @@
 
 UPDATE=$(npm outdated --json | jq -r 'to_entries[] | .key + " " + .value.current + " -> " + .value.latest')
 
-if [[ -z $UPDATED ]]; then
+if [[ -z $UPDATE ]]; then
 	echo "No updates available."
 else
 
