@@ -11,6 +11,7 @@ else
 	echo -e "Updating dependencies:\n$UPDATE"
 
 	read -p "Proceed with update? (y/N) " -n 1 -r
+	echo ""
 
 	if [[ $REPLY =~ ^[Yy]$ ]]
 	then
@@ -28,6 +29,7 @@ npm version 1.0.0-date-$(date +%Y.%m.%d)
 npm publish --dry-run --tag latest
 
 read -p "Do you want to continue and publish? (y/N) " -n 1 -r
+echo ""
 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
