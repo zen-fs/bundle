@@ -8,16 +8,17 @@ if [[ -z $UPDATE ]]; then
 	echo "No updates available."
 else
 
-	echo -e "Updating dependencies:\n $UPDATE"
+	echo -e "Updating dependencies:\n$UPDATE"
 
 	read -p "Proceed with update? (y/N) " -n 1 -r
 
 	if [[ $REPLY =~ ^[Yy]$ ]]
 	then
 		npm install @zenfs/archives@latest @zenfs/cloud@latest @zenfs/core@latest @zenfs/dom@latest @zenfs/emscripten@latest
-		git commit -am "$(echo -e "Updated dependencies:\n $UPDATE")"
+		git commit -am "$(echo -e "Updated dependencies:\n$UPDATE")"
 	else
-		echo "Publish aborted."
+		echo "Update aborted."
+		exit
 	fi
 fi
 
