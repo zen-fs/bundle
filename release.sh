@@ -27,6 +27,11 @@ fi
 # x.x.x-date-yyyy.mm.dd
 npm version 1.0.0-date-$(date +%Y.%m.%d)
 
+
+echo "Pushing changes..."
+git push
+git push --tags
+
 npm publish --dry-run --tag latest
 
 read -p "Do you want to continue and publish? (y/N) " -n 1 -r
