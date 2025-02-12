@@ -1,6 +1,6 @@
 {
 	"name": "@zenfs/bundle",
-	"version": "1.0.0-date-2025.2.10",
+	"version": "1.0.0-date-2025.2.12",
 	"author": "James Prevett <jp@jamespre.dev> (https://jamespre.dev)",
 	"license": "MIT",
 	"type": "module",
