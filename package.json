@@ -31,7 +31,7 @@
 	"dependencies": {
 		"@zenfs/archives": "^1.0.5",
 		"@zenfs/cloud": "^0.1.2",
-		"@zenfs/core": "^1.10.3",
+		"@zenfs/core": "^1.11.0",
 		"@zenfs/dom": "^1.1.5",
 		"@zenfs/emscripten": "^1.0.1"
 	},
