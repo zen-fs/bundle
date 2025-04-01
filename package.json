@@ -36,7 +36,7 @@
 		"@zenfs/emscripten": "^1.0.2"
 	},
 	"devDependencies": {
-		"esbuild": "^0.25.1",
+		"esbuild": "^0.25.2",
 		"prettier": "^3.5.3"
 	}
 }
