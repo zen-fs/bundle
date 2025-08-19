@@ -29,14 +29,14 @@
 		"tag": "latest"
 	},
 	"dependencies": {
-		"@zenfs/archives": "^1.2.2",
+		"@zenfs/archives": "^1.2.4",
 		"@zenfs/cloud": "^0.2.1",
-		"@zenfs/core": "^2.3.2",
-		"@zenfs/dom": "^1.1.8",
+		"@zenfs/core": "^2.3.8",
+		"@zenfs/dom": "^1.2.2",
 		"@zenfs/emscripten": "^1.0.3"
 	},
 	"devDependencies": {
-		"esbuild": "^0.25.5",
-		"prettier": "^3.6.0"
+		"esbuild": "^0.25.9",
+		"prettier": "^3.6.2"
 	}
 }
