@@ -32,7 +32,7 @@
 		"@zenfs/archives": "^1.2.5",
 		"@zenfs/cloud": "^0.2.3",
 		"@zenfs/core": "^2.4.0",
-		"@zenfs/dom": "^1.2.3",
+		"@zenfs/dom": "^1.2.4",
 		"@zenfs/emscripten": "^1.0.4"
 	},
 	"devDependencies": {
