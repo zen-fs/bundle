@@ -1,50 +1,50 @@
 {
-  "name": "@zenfs/bundle",
-  "version": "1.0.0-date-2025.9.10",
-  "author": "James Prevett <jp@jamespre.dev> (https://jamespre.dev)",
-  "license": "MIT",
-  "type": "module",
-  "description": "Bundles for ZenFS",
-  "keywords": [],
-  "bin": {
-    "zenfs-bundle": "build.js"
-  },
-  "files": [
-    "build.js",
-    "entry",
-    "dist"
-  ],
-  "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*"
-  },
-  "scripts": {
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "build": "./build.js",
-    "prepublishOnly": "./build.js -v"
-  },
-  "publishConfig": {
-    "access": "public",
-    "tag": "latest"
-  },
-  "dependencies": {
-    "@zenfs/archives": "^1.2.5",
-    "@zenfs/cloud": "^0.2.3",
-    "@zenfs/core": "^2.4.0",
-    "@zenfs/dom": "^1.2.4",
-    "@zenfs/emscripten": "^1.0.4"
-  },
-  "devDependencies": {
-    "esbuild": "^0.25.9",
-    "prettier": "^3.6.2"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "useTabs": true,
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "printWidth": 180,
-    "arrowParens": "avoid"
-  }
+	"name": "@zenfs/bundle",
+	"version": "1.0.0-date-2025.9.10",
+	"author": "James Prevett <jp@jamespre.dev> (https://jamespre.dev)",
+	"license": "MIT",
+	"type": "module",
+	"description": "Bundles for ZenFS",
+	"keywords": [],
+	"bin": {
+		"zenfs-bundle": "build.js"
+	},
+	"files": [
+		"build.js",
+		"entry",
+		"dist"
+	],
+	"exports": {
+		".": "./dist/index.js",
+		"./*": "./dist/*"
+	},
+	"scripts": {
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"build": "./build.js",
+		"prepublishOnly": "./build.js -v"
+	},
+	"publishConfig": {
+		"access": "public",
+		"tag": "latest"
+	},
+	"dependencies": {
+		"@zenfs/archives": "^1.2.5",
+		"@zenfs/cloud": "^0.2.3",
+		"@zenfs/core": "^2.4.0",
+		"@zenfs/dom": "^1.2.4",
+		"@zenfs/emscripten": "^1.0.4"
+	},
+	"devDependencies": {
+		"esbuild": "^0.25.9",
+		"prettier": "^3.6.2"
+	},
+	"prettier": {
+		"singleQuote": true,
+		"useTabs": true,
+		"trailingComma": "es5",
+		"tabWidth": 4,
+		"printWidth": 180,
+		"arrowParens": "avoid"
+	}
 }
